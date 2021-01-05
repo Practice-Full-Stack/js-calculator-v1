@@ -1,26 +1,94 @@
 /******************************
-GENERAL SETUP
+RESETS
 ******************************/
 
-/* RESETS */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* {box-sizing: border-box;}
+a {text-decoration: none;}
+p {text-align:center;}
 
-/* GENERAL */
-
-a {
-    text-decoration: none;
-}
+/******************************
+PAGE LAYOUT
+******************************/
 
 body {
     background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    margin: 0;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.container {
+    max-width: 20rem;
+}
+
+/******************************
+CALCULATOR
+******************************/
+
+.calculator {
+    border-radius: 12px;
+    margin: 2em auto 0em;
+    overflow: hidden;
+}
+
+.display {
+    background-color:#222222;
+    font-size: 1.7em;
+    color: #FFF;
+    text-align: right;
+    padding: 0.5em 0.75em;
+}
+
+.keyboard {
+    /* style key div as a grid */
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #999; /* div background is gray (not the keys) */
+}
+
+.keyboard * {
+    /* style the keys */
+    background-color: #FFF;
+    padding: 0.5em 1.25em;
+    /* center content in keys */
+    position: relative;
+    text-align: center;
+}
+
+.operator {
+    background-color: #eee;
+}
+
+.equalsKey {
+    /* orange key colors changes from top "to botton" */
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: 4; /* shift key to the right */
+    grid-row: 2 / span 4; /* start at the second row and span four columns */
+}
+
+
+
+
+
+
+
+
 
 
 
 /******************************
 BUTTONS
 ******************************/
+
+button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    outline: none;
+    appearance: none; /* remove platform specific styling */
+}
