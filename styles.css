@@ -2,6 +2,8 @@
 RESETS
 ******************************/
 
+/* :root is useful for declaring global CSS variables */
+:root {font-family: Helvetica, sans-serif;font-size:150%;font-weight:300;line-height:1.2;}
 * {box-sizing: border-box;}
 a {text-decoration: none;}
 p {text-align:center;}
@@ -22,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 20rem;
+    width: 20em;
 }
 
 /******************************
@@ -30,9 +32,12 @@ CALCULATOR
 ******************************/
 
 .calculator {
+    max-width: 15em;
+    overflow: hidden;
     border-radius: 12px;
     margin: 2em auto 0em;
-    overflow: hidden;
+    
+    
 }
 
 .display {
@@ -71,24 +76,16 @@ CALCULATOR
     grid-row: 2 / span 4; /* start at the second row and span four columns */
 }
 
-
-
-
-
-
-
-
-
-
-
 /******************************
 BUTTONS
 ******************************/
 
 button {
-    background-color: transparent;
-    border-radius: 0;
-    border: 0;
+    font-size: inherit;
     outline: none;
-    appearance: none; /* remove platform specific styling */
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;   
 }
+
+/* press buton logic */
