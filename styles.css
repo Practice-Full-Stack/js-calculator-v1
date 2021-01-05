@@ -1,0 +1,26 @@
+/******************************
+GENERAL SETUP
+******************************/
+
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+}
+
+
+
+/******************************
+BUTTONS
+******************************/

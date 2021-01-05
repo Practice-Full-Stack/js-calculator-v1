@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p>Welcome to my first calulator. Please do some math!</p>
+        <div class="calculator">
+            <!-- TOP DISPLAY FOR RESULTS (DEFAULT ZERO) -->
+            <div class="results">0</div>
+            <!-- KEYBOARD (CLICKABLE) -->
+            <div class="keyboard">
+                <!-- OPERATOR KEYS  -->
+                <button class="operator" data-myAction="add">+</button> <!-- NOTE: The data-* attribute lets us embed custome data attributes to use in the page's JavaScript-->
+                <button class="operator" data-myAction="add">-</button>
+                <button class="operator" data-myAction="add">&times</button>
+                <button class="operator" data-myAction="add">÷</button>
+                <!-- NUMBER KEYS -->
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <!-- MORE ACTION KEYS -->
+                <button data-myAction="decimal">.</button>
+                <button data-myAction="clear">AC</button>
+                <!-- EQUALS KEY (INITIATE CALCULATION) -->
+                <button class="equalsKey" data-myAction="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+</html>
