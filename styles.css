@@ -27,18 +27,16 @@ body {
     width: 20em;
 }
 
-/******************************
-CALCULATOR
-******************************/
-
 .calculator {
     max-width: 15em;
     overflow: hidden;
     border-radius: 12px;
-    margin: 2em auto 0em;
-    
-    
+    margin: 2em auto 0em; 
 }
+
+/******************************
+DISPLAY
+******************************/
 
 .display {
     background-color:#222222;
@@ -47,6 +45,10 @@ CALCULATOR
     text-align: right;
     padding: 0.5em 0.75em;
 }
+
+/******************************
+KEYBOARD
+******************************/
 
 .keyboard {
     /* style key div as a grid */
@@ -76,6 +78,26 @@ CALCULATOR
     grid-row: 2 / span 4; /* start at the second row and span four columns */
 }
 
+
+/******************************************************************************************
+STOPPED HERE --> NEED TO IMPLEMENT THE BUTTON PRESS EFFECT (missing code form somewhwere else?
+******************************************************************************************/
+/* https://codepen.io/zellwk/pen/pLgmGL?editors=0100 */
+/* press buton logic */
+.keyboard > *active::before,
+.keyboard > .is-depressed::before{
+background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 /******************************
 BUTTONS
 ******************************/
@@ -87,5 +109,3 @@ button {
     border-radius: 0;
     background-color: transparent;   
 }
-
-/* press buton logic */
