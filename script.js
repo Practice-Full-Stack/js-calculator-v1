@@ -13,3 +13,5 @@ myKeyboard.addEventListener('click', localFunction => {
     }
 }
 )
+
+// determine which key was pressed with the 'data-action' attribute
