@@ -9,7 +9,7 @@ const myKeyboard = document.querySelector('.keyboard'); // return the first elme
 // do the listening
 myKeyboard.addEventListener('click', localFunction => {
     if (localFunction.target.matches('button')) {
-        alert("Your momma");
+        alert("Yeahhhh buddyyy");
     }
 }
 )
